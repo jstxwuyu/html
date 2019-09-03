@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css 样式</title>
+    <!-- 外部css需要引入 -->
+    <link rel="stylesheet" href="myt.css" type="text/css">
+    <style>
+    div{
+        color: bisque;
+        font-style: italic;
+        cursor: wait;
+        border: 1px dotted red;/*solid实线 dotted虚线*/
+        width: 100;
+        height: 100;
+    }
+    </style>
+</head>
+<body>
+    <!-- 块标记：会另起一行的标记
+    行内标记：不会另起一行的标记 -->
+    <!-- 内联样式的优先级是最高的
+    外部样式和内部样式谁离的近谁作用
+    -->
+1<div>
+2
+</div>3
+<br>
+1<span>2</span>3
+<div></div>
+</body>
+</html>

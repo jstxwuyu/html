@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=t, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css test</title>
+    <style>
+        /* 标记选择器写法，根据标记名选择 */
+        a{
+            color:red;
+            font-size: 40pt;
+            font-family: 楷体;
+            text-decoration: none;
+            /* 下划线 text-decoration */
+        }
+        h1{
+            color: red;
+            font-size: 50pt;
+
+        }
+        /* class选择器写法 优先级大于标记选择器*/
+.c1{
+    font-size: 30pt;
+    color: orange;
+}
+.c2{
+    font-size: 50pt;
+    color: gold;
+    text-decoration: underline
+}
+/* id选择器       id选择器》class选择器》标记选择器*/
+#d2{
+font-size: 60pt;
+color: red;
+}
+
+
+        </style>
+</head>
+<!-- style用于标记css -->
+
+<body>
+    <a href="https://www.baidu.com" class="c1">百度</a>
+    <br>
+    <a href="http://www.dangdang.com" class="c2" id="d2">当当</a>
+    <h1>今天是个精致的猪猪男孩</h1>
+</body>
+</html>
