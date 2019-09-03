@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js完成图片的显示隐藏功能
+    </title>
+    <script>
+        //单击实现隐藏功能
+    function btn1(){
+//找到body体中的img，将style样式中的visibility的值修改为hidden
+        //document.getElementById()根据id找element
+        var a =document.getElementById("bt1");
+        // alert(a);
+        a.style.visibility="hidden"
+
+    }
+    function btn2(){
+        var a =document.getElementById("bt1");
+        
+        a.style.visibility="visible"
+    }
+    </script>
+</head>
+<body>
+
+    <input type="button" name="btn" value="显示" onclick="btn2()">
+    <input type="button" name="btn" value="隐藏" onclick="btn1()">
+<br>
+<!-- style="visibility: hidden 隐藏控件 -->
+        <img src="https://ac01.oss-cn-beijing.aliyuncs.com/mm.jpg" width="400" height="300" style="visibility: visible" id="bt1">
+    
+</body>
+</html>
